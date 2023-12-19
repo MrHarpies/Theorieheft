@@ -1,0 +1,67 @@
+\usepackage[utf8]{inputenc} % Umlaute im PDF anzeigen
+\usepackage{ngerman}
+\usepackage{fontenc} 
+\usepackage{graphicx} % Anzeigen von Graphiken
+\usepackage{xcolor} % Eigene Farben
+
+\usepackage{hyperref} % Für Links
+\usepackage{amsmath} % Mathematische Schreibweisen
+\usepackage{amssymb} % Mathematische Symbole
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{paracol}
+
+
+
+
+
+
+
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest} % Setzt die Kompatibilität auf die neueste Version
+
+
+
+
+%Farben
+\definecolor{darkgreen}{rgb}{0,0.3,0} % Definition von Dunkelgrün
+
+% Tikx Farben
+
+\definecolor{f3551e38-74df-57e2-b793-83d7fe876c85}{RGB}{0, 0, 0}
+
+
+
+
+
+
+%Eigene Commands
+
+    % Neue Seite ################################################################################################################################################
+    
+    
+\newcommand{\link}[2]{
+
+\href{#1}{\textcolor{blue}{\underline{#2}}}
+
+}
+
+%######################################GTR-Command#########################################
+% Der Command GTR ist über \gtr aufrufbar und erfolgt einen Parameter. Hier muss der name des Buttons in Kleinbuchstaben eingetragen werden. 
+% Der Command nutzt das jeweilige Bild aus \Media\GTR\Buttons und formatiert es so, dass es sich in den Text vollkommen einbindet. 
+
+\newcommand{\gtr}[1]{
+\hspace{-2.5ex}
+    \setlength{\fboxsep}{0pt}% Kein Abstand zwischen Rahmen und Bild
+    \setlength{\fboxrule}{0pt}% Dicke des Rahmens
+    \raisebox{-0.1\height}{
+        \fbox{\includegraphics[height=1.9ex]{Media/GRT/Buttons/#1}}
+    }\hspace{-1.5ex}
+}
+
+%######################################GTR-Command#########################################
+
+
+\title{Theorieheft}
+\author{Bjarne Axmann}

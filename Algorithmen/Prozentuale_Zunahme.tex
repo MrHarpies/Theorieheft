@@ -1,0 +1,20 @@
+Um die Berechnung der prozentualen Änderung des Graphen zu bestimmen kann man algorythmisch vorgehen.
+\begin{center}	
+\tikzstyle{prozentuelleZunahme} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, font=\normalsize, color=black, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=white]
+\tikzstyle{Entscheidung} = [diamond, minimum width=3cm, minimum height=2cm, text centered, font=\normalsize, color=black, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=white]
+\tikzstyle{Prozessbox} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, font=\normalsize, color=black, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=white]
+\tikzstyle{linie} = [thick, line width=1, ->, >=stealth]
+\begin{tikzpicture}[node distance=2cm]
+\node (ProzessBoxing) [prozentuelleZunahme] {Prozentuelle Zunahme};
+\node (pfeil1) [Entscheidung, below of=ProzessBoxing, yshift=-0.5cm] {$b>1$};
+\node (pfeil2) [Prozessbox, below of=pfeil1, yshift=-0.5cm,xshift=-3cm] {$b-1$};
+\node (pfeil3) [Prozessbox, right of=pfeil2, xshift=4cm] {$1-b$};
+\node (pfeil4) [Prozessbox, below of=pfeil2] {$\cdot100$};
+\node (pfeil5) [Prozessbox, right of=pfeil4, xshift=4cm] {$\cdot100$};
+\draw [linie] (ProzessBoxing) --  (pfeil1);
+\draw [linie] (pfeil1) -| node[anchor=south] {ja} (pfeil2);
+\draw [linie] (pfeil1) -| node[anchor=south] {nein} (pfeil3);
+\draw [linie] (pfeil3) --  (pfeil5);
+\draw [linie] (pfeil2) --  (pfeil4);
+\end{tikzpicture}
+\end{center}
