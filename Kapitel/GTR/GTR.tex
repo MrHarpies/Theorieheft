@@ -126,7 +126,7 @@ Ist eine Gleichung mit einer Unbekannten in der Grundform $=0$ gegeben, so kann 
 	\begin{flushleft}
 	Um schlussendlich die Nullstellen zu bestimmen müssen die Grenzen bestätigt werden. Anschließend zeigt der Taschenrechner die Nullstellen an.
 	%TODO Eine Lösung finden die Dokumentation hier zu schreiben, ohne dass ein Fehler auftritt
-	\[(y_1)\rightarrowx=1\quad y=0\]
+	%\[(y_1)\rightarrowx=1\quad y=0\]
 		\end{flushleft}
 \switchcolumn
 	\begin{flushright}
@@ -135,6 +135,51 @@ Ist eine Gleichung mit einer Unbekannten in der Grundform $=0$ gegeben, so kann 
 		
 \end{paracol}
 \pagebreak
+
+\subsection{Lösen von Gleichungen ohne Graph}
+Nicht nur das Lösen nach Null ist möglich mit dem Taschenrechner. Genauso lässt sich eine klassische Gleichung äquvalent umformen mit dem folgenden Vorgehen.
+
+\begin{paracol}{2}
+	\begin{flushleft}
+	Zunächst navigiert man mit der Taste \gtr{math} auf das \texttt{math} Menu und wählt dort ganz unten die Option \texttt{Numeric Solver} aus. 
+	\end{flushleft}	
+\switchcolumn
+	\begin{flushright}
+		\includegraphics[width=6cm]{Media/GRT/Visualisierung/Gleichung_loesen_aequivalent/Gleichung_loesen_aequivalent_1.png}
+	\end{flushright}
+\end{paracol}
+
+\begin{paracol}{2}
+	\begin{flushleft}
+	Nun kann man jeweils die beiden Gleichungen in die Felder \texttt{EQ1} und \texttt{EQ2}
+	\end{flushleft}	
+\switchcolumn
+	\begin{flushright}
+		\includegraphics[width=6cm]{Media/GRT/Visualisierung/Gleichung_loesen_aequivalent/Gleichung_loesen_aequivalent_3.png}
+	\end{flushright}
+\end{paracol}
+
+\begin{paracol}{2}
+	\begin{flushleft}
+	Abschließend drückt man die Taste unter \texttt{ok}, worauf man in dem folgenden Fenster die Grenzen bestimmen kann. Dies ist nur relevant für Gleichungen, die mehrere Ergebnisse liefern können. 
+	\end{flushleft}	
+\switchcolumn
+	\begin{flushright}
+		\includegraphics[width=6cm]{Media/GRT/Visualisierung/Gleichung_loesen_aequivalent/Gleichung_loesen_aequivalent_4.png}
+	\end{flushright}
+\end{paracol}
+\begin{paracol}{2}
+	\begin{flushleft}
+	Abschließend bestätigt man wieder mit der Taste, die unter \texttt{ok} liegt, und erhält ein Ergebnis. 
+	\end{flushleft}	
+\switchcolumn
+	\begin{flushright}
+		\includegraphics[width=6cm]{Media/GRT/Visualisierung/Gleichung_loesen_aequivalent/Gleichung_loesen_aequivalent_5.png}
+	\end{flushright}
+\end{paracol}
+
+
+
 
 \subsection{Ableitungsgraph bestimmen}
 Auch der Ableitungsgraph lässt sich mit dem Taschenrechner problemlos bestimmen, indem man den \texttt{nDeriv} Befehl anwendet. 
@@ -210,6 +255,115 @@ Auch der Ableitungsgraph lässt sich mit dem Taschenrechner problemlos bestimmen
 	\includegraphics[width=6cm]{Media/GRT/Visualisierung/Integrale_berechnen/Integrale_berechnen_4.png}
 \end{flushright}
 \end{paracol}
+
+\subsection{Unbekannte Intervallgrenzen eintragen}
+Um eine bekannten Flächeninhalt mit einer unbekannten Intervallgrenze zu berechnen, geht man wie folgt vor. 
+\begin{paracol}{2}
+\begin{flushleft}
+	Eintragen der Ausgangsfunktion in das Funktionsmenü bei \gtr{y=}
+\end{flushleft}	
+\switchcolumn
+\begin{flushright}
+\begin{figure}
+	\includegraphics[width=6cm]{Media/GRT/Visualisierung/unbekannte_intervallgrenze/unbekannte_intervallgrenze_1.gif}
+	\caption{\link{https://youtu.be/it9pl_ZB9wc}{Visualisierung}}
+	
+\end{figure}
+\end{flushright}
+\end{paracol}
+Anschließend muss nun das Integral eingetragen werden. Hierfür drückt man zunächst auf die Taste \gtr{math}und wählt anschließend die Option \texttt{fnInt()} aus. Nun müssen die Integralgrenzen eingefügt werden. Die erste bekannte Intervallgrenze wird unten eingefügt, während die unbekannte mit $x$ ersetzt wird. Hiernach muss die Funktion eingetragen werden, so wie die Variable, nach der hier aufgelöst wird. Abschließend kann die Taste \gtr{graph} gedrückt werden. Auf dem Graphen Fenster ist nun die Stammfunktion zu sehen.
+
+\subsection{Berechnung nicht-orientierter Flächen}
+Um anstatt mit orientierten Flächen mit dem reinen Flächeninhalt zu rechnen, muss mit dem Betrag gerechnet werden.
+\begin{paracol}{2}
+\begin{flushleft}
+	Zunächst müssen die Nullstellen mit dem Befehl \texttt{zero} ermittelt werden. Hierfür geht man auf \gtr{2nd} und \gtr{trace}, wählt dort \texttt{zero} aus und gibt nun Rechts und Links die Grenzen der Nullstelle an. Abschließend drückt man Enter und erhält die X-Koordiante. Dieser Vorgang ist Abhängig von der Anzahl der Nullstellen und muss ggf. mehr als zwei mal wiederholt werden. 
+\end{flushleft}	
+\switchcolumn
+\begin{flushright}
+	\begin{figure}
+		\includegraphics[width=6cm]{Media/GRT/Visualisierung/berechnung_nichtOrientierter_Flacheninhalt/berechnung_nichtOrientierter_Flacheninhalt_1.png}
+		\caption{\link{https://youtu.be/MD6kzV_FIQc}{Visualisierung}}
+
+	\end{figure}
+	\end{flushright}
+\end{paracol}
+Anschließend muss nun der Flächeninhalt zwischen dem Graphen und der X-Achse berechnet werden mithilfe der Betragsstriche. Hierfür benutzt man die im vorherigen Schritt berechneten Nullstellen als Intervallgrenzen und berechnet den jeweiligen Flächeninhalt. Diese werden anschließend addiert, worauf man den gesamten Flächeninhalt des Graphen in einem Intervall hat. 
+	Die Druchführung der Addition darf nicht im Bereich der Funktion durchgeführt werden, da hierbei sich nur einen Gleichung ergibt, welche als lineare dargestellt wird. Um nun ein Integral einzutragen verwendet man \gtr{math} und wählt die Option \texttt{fnInt()} an. Anschließend kann man die Intervallgrenzen(berechneten Nullstellen) eintragen. Um nun denBetrag einer Funktion zu verwenden, muss man auf \gtr{math} drücken und dort mit den Pfeiltasten auf die Kategorie \texttt{NUM} navigieren. Dort wählt man \texttt{abs()} aus und bestätigt mit Enter. 
+\pagebreak
+\subsection{Flächeninhalt zwischen zwei Funktionen berechnen}
+Bei berechnen von einem Flächeninhalt zwischen zwei Funktionen stellt sich ein ähnliches Problem Problem heraus wie bei berechnen des Flächeninhalts mit der X-Achse.
+\begin{paracol}{2}
+	\begin{flushleft}
+	Um den Flächeninhalt mit dem GTR zu berechnen, bildet man zunächst die Differenzenfunktion, indem man sich bei Funktionen in der Funktionsübersicht einträgt und anschließend eine weitere definiert. Diese Funktion subtrahiert die beide vorherigen Funktionen von einandern. 
+	\end{flushleft}
+\switchcolumn
+	\begin{flushright}
+		\begin{figure}
+			\includegraphics[width=6cm]{Media/GRT/Visualisierung/Flaecheninhalt_zwischen_zwei_Funktionen_berechnen/Flaecheninhalt_zwischen_zwei_Funktionen_berechnen.png}
+		\caption{\link{https://youtu.be/y-6UFVmVIOE}{Visualsisierung}}
+		\end{figure}
+	\end{flushright}
+\end{paracol}
+\pagebreak
+\subsection{Regression}
+Die Regression ist ein Verfahren, bei dem Zusammenhänge zwischen Abhängigkeiten einer oder mehrere Variablen analysiert werden. Beim GTR gibt es verschiedene Arten, die für verschiedenen Graphen sind. Diese Arten sind spezifisch für spezifische Graphen gedacht, weswegen das wählen dieser sorgfältig erfolgen sollte. 
+
+\begin{paracol}{2}
+\begin{flushleft}
+	Um mithilfe von Regression eine Funktionsgleichung zu bestimmen geht man über \gtr{stat} in das \texttt{STAT}-Menu.
+\end{flushleft}	
+\switchcolumn
+\begin{flushright}
+	\includegraphics[width=6cm]{Media/GRT/Visualisierung/Regression/Regression_1.png}
+\end{flushright}
+\end{paracol}
+
+\begin{paracol}{2}
+	\begin{flushleft}
+	Anschließend wählt man Edit aus und kommt in die Listenansicht. In dieser müssen nun mindestens zwei verschiedene Punkte eingetragen werden. In der ersten Spalte befinden sich hierbei die X-Wert und in der zweiten die Y-Werte. 
+	\end{flushleft}	
+\switchcolumn
+	\begin{flushright}
+		\includegraphics[width=6cm]{Media/GRT/Visualisierung/Regression/Regression_5.png}
+	\end{flushright}
+\end{paracol}
+
+\begin{paracol}{2}
+	\begin{flushleft}
+	Sind die Werte eingetragen, so drückt man erneut \gtr{stat} und navigiert mit den Pfeiltaste in das \texttt{Calc} Menu. Dort wählt man\texttt{QuadReg} aus und bestätigt.
+	\end{flushleft}	
+\switchcolumn
+	\begin{flushright}
+		\includegraphics[width=6cm]{Media/GRT/Visualisierung/Regression/Regression_3.png}
+	\end{flushright}
+\end{paracol}
+
+\begin{paracol}{2}
+	\begin{flushleft}
+	Bestätigt man erneut kommt man in eine Bestätigungsansicht, wo die jeweiligen Listen erneut ausgewählt werden müssen. Bestätigt man dies, so erhalt man 
+	\begin{center}
+			\texttt{LinReg}\\
+			\end{center}
+			\texttt{y=ax+c}\\
+			\texttt{a=-05}\\
+			\texttt{c=3}
+	\end{flushleft}	
+\switchcolumn
+	\begin{flushright}
+		\includegraphics[width=6cm]{Media/GRT/Visualisierung/Regression/Regression_4.png}
+		
+	\end{flushright}
+\end{paracol}
+\pagebreak
+
+
+
+
+
+
+
+
 
 
 
