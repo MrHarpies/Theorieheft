@@ -1,3 +1,6 @@
+
+
+%######################################Packeges#########################################
 \usepackage[utf8]{inputenc} % Umlaute im PDF anzeigen
 \usepackage{ngerman}
 \usepackage{fontenc} 
@@ -10,43 +13,29 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}
 \usepackage{paracol}
+\usepackage{gensymb} % Für weitere Zeichen (Grad, usw.)
 
 \usepackage{todonotes} % TODOS
-
-
-
-
-
-
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest} % Setzt die Kompatibilität auf die neueste Version
 
 
-
+%######################################Farben#########################################
 
 %Farben
 \definecolor{darkgreen}{rgb}{0,0.3,0} % Definition von Dunkelgrün
 
 % Tikx Farben
-
 \definecolor{f3551e38-74df-57e2-b793-83d7fe876c85}{RGB}{0, 0, 0}
 
 
 
-
-
-
-%Eigene Commands
-
-    % Neue Seite ################################################################################################################################################
-    
-    
+%######################################Eigene Commands#########################################
+     
 \newcommand{\link}[2]{
 
-\href{#1}{\textcolor{blue}{\underline{#2}}}
-
-}
+\href{#1}{\textcolor{blue}{\underline{#2}}}}
 
 %######################################GTR-Command#########################################
 % Der Command GTR ist über \gtr aufrufbar und erfolgt einen Parameter. Hier muss der name des Buttons in Kleinbuchstaben eingetragen werden. 
@@ -66,3 +55,15 @@
 
 \title{Theorieheft}
 \author{Bjarne Axmann}
+
+%######################################Enviroment#########################################
+
+\newenvironment{beispiel}[1][]{
+\vspace{0.5cm}
+\textbf{\textit{Beispiel.}\em}%
+\ifthenelse{\equal{#1}{}}{%
+%
+}{%
+
+}
+}{\hfill$\triangle$}
