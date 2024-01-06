@@ -1,5 +1,5 @@
 # Mathe-Theorieheft
-Zusammenfassung aller Themen der gymnasialen Oberstufe in Niedersachen. 
+Zusammenfassung aller Themen der gymnasialen Oberstufe in Niedersachsen. 
 Dieses Theorieheft der Mathematik umfasst grundlegend die Themen der gymniasalen Oberstufe. Die Themen wurden selbst definiert und mit eigenen Inhalten ergänzt, sodass sich oftmals ein anderer Blickwinkel auf die Themen ergibt. 
 
 ### Inhalt
@@ -12,11 +12,11 @@ Dieses Theorieheft der Mathematik umfasst grundlegend die Themen der gymniasalen
 
 <a name="Erklaerung"></a>
 ## Erklärung
-Diese Projekt entstand während der Absolvierung des zweiten Bildungsweg in Niedersachen und wurde von einem Mathelehrer als persönliches Notizbuch für jeden Schüler angedacht. Da dies meiner Meinung eine optimale Lösung ist den Überblick über die Themen zu behalten, entschied ich mich für eine konsequente Vorführung dieses Theoriehefts, obwohl es nicht nehr aktiv im Unterricht geführt wurde. 
+Dieses Projekt entstand während der Absolvierung des zweiten Bildungsweges in Niedersachsen und wurde von einem Mathelehrer als persönliches Notizbuch für jeden Schüler angedacht. Da dies meiner Meinung nach eine optimale Lösung ist, um den Überblick über die Themen zu behalten, entschied ich mich für eine konsequente Vorführung dieses Theoriehefts, obwohl es nicht nehr aktiv im Unterricht geführt wurde. 
 
 <a name="Fokus"></a>
 ## Fokus
-Meine Fokus während des Schreibens dieses Dokments liegt primär auf der Verständlichkeit der Themen, weswegen Inhalte möglicherweise nicht korrekt mathetisch notiert wurden. Somit wurden zahlreiche Schaubilder und interaktive Visualisierungen erstellt, die diesem Zweck dienen sollen. 
+Meine Fokus während des Schreibens dieses Dokuments liegt primär auf der Verständlichkeit der Themen, weswegen Inhalte möglicherweise nicht korrekt mathematisch notiert wurden. Somit wurden zahlreiche Schaubilder und interaktive Visualisierungen erstellt, die diesem Zweck dienen sollen. Ebenfalls ist ein weiters Ziel das Lernen der mathematischen Schreibweisen, sodass diese auch selbst angewendet werden können.
 
 <a name="Drittanbietersoftware"></a>
 ## Genutzte Drittanbietersoftware
@@ -33,11 +33,11 @@ Meine Fokus während des Schreibens dieses Dokments liegt primär auf der Verst�
 
 <a name="Informationen_ergaenzen"></a>
 ## Eigene Informationen ergänzen
-Werden Fehler bemerkt, würde ich mich sehr freuen, wenn ihr sie Verbessert bzw. mit dem Clonen des Reposetorys die Möglichkeit schafft, diese im Anschluss, nachdem die Fehler verbessert wurden, diese als Push-Request hochzuladen. Im nächsten Schritt werden ich mir die Änderungen anschauen und mich ggf. für die Implementation entscheiden. 
+Werden Fehler bemerkt, würde ich mich sehr freuen, wenn ihr sie verbessert bzw. mit dem Klonen des Repositories die Möglichkeit schafft, diese im Anschluss, nachdem die Fehler verbessert wurden, diese als Push-Request hochzuladen. Im nächsten Schritt werden ich mir die Änderungen anschauen und mich ggf. für die Implementierung  entscheiden. 
 
 <a name="Fehler"></a>
 ## Umgang mit Fehlern
-Sollten Fehler auftreten, so ist es möglich sich das Reposetrie runterzuladen und ihn anschließend zu verbessern.
+Sollten Fehler auftreten, so ist es möglich, sich das Repositories herunterzuladen und es anschließend zu verbessern.
 
 <a name="Schluss"></a>
 ## Schluss
