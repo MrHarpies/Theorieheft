@@ -1,4 +1,4 @@
-\section{Exponentialfunktionen}
+\section{Exponentialfunktionen}\label{sec:Exponentialfunktionen}
 Eine Exponentialfunktion stellt einen exponentiell Verlauf eines Graphen dar. 
 \begin{figure}[h!]
 \centering
@@ -19,7 +19,7 @@ Eine Exponentialfunktion stellt einen exponentiell Verlauf eines Graphen dar.
 \caption{Funktionsgraph von $f(x)=2^x$}
 \end{figure}
 
-\subsection{Normalform}
+\subsection{Normalform}\label{sec:Exponentialfunktionen/Normalform}
 
 Hierbei folgt einer Exponentialfunktion der folgenden Form: 
 \[f(x)=a\cdot b^x\] Wobei $b>0 \land b\neq 0  $   sein muss.\\
@@ -83,7 +83,7 @@ $0$ für $x$ immer zu $1$ kommt. Auffällig ist hierbei, dass setzt man für $b 
  
 
  
- \subsection{Prozentuale Zunahme}
+ \subsection{Prozentuale Zunahme}\label{sec:Exponentialfunktionen/Prozentuale Zunahme}
  Einen exponentiellen Verlauf kann man unteranderem an einer prozentualen Veränderung erkennen. So lässt sich sagen, dass sei $b>1$ eine prozentuale Steigung der Differenz zwischen
  $1$ und dem Wert, den $b$ annimmt bestimmen. \\
  Nimmt man an, dass sei $b=1.01$, so ist $0.1$ gleich $1\%$ von $1$ und besitzt somit eine prozentuale Zunahme von $1\%$. Übertragt man diesen Sachverhalt auf eine weitere Basis,
@@ -104,8 +104,102 @@ So folgt aus $b=2.6$, dass eine Zunahme von $160\%$ vorliegt, da sich eine proze
 \[f(x)=0.8^x\Rightarrow20\%\]
 So folgt aus $b=0.8$, dass eine Abnahme von $20\%$ vorliegt. Zu dieser Annahme kommt man, indem man sich überlegt, dass $b=1=100\%$ sind. Hat man nun nur $b=0.8$ anstelle von $b=1$ , so ergibt sich hieraus die Verringerung von $20\%$
 \pagebreak
-\subsection{Prozentuale Zunahme/Abnahme algorithmisch bestimmen}
+\subsection{Prozentuale Zunahme/Abnahme algorithmisch bestimmen}\label{sec:Exponentialfunktionen/Prozentuale Zunahme/Abnahme algorithmisch bestimmen}
 \input{Algorithmen/Prozentuale_Zunahme}
+\pagebreak
+\subsection{Umformung von der normalen Exponentialfunktion zu der E-Funktion}
+Da sich die $e$-Funktion besonders gut differenzieren und integrieren lässt, nutzt man diese, um Sachverhalte darzustellen. Hierfür formt man die normale Exponentialfunktion so um, dass man sie als $e$-Funktion schreiben kann. Hierfür ist es relevant die Bedeutung der folgenden Normalform zu kennen. 
+\subsubsection{Normalform}
+\begin{align*}
+	f(x)=a\cdot e^{k\cdot x+d}+c
+\end{align*}
+\geogebra{https://www.geogebra.org/m/bkar24wm}
+
+\subsubsection{$a$ - Streckfaktor}
+Der Faktor $a$ ist bestimmt die Streckungs/Stauchungs des Graphen. Wird dieser negativ, so wird der Graph an der $X$-Achse gespiegelt. Der Grund hierfür ist, dass ist $a$ negativ, werden die gesamten Werte des Graphen ebenfalls negativ. 
+%ToDo Hier fehlt ein Graph mit einem Vergleich
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={},
+    xlabel={X-Achse},
+    ylabel={Y-Achse},
+    axis lines=middle, % Zentriert die Achsen
+    xmin=1, xmax=1, % Setzt die Grenzen für die X-Achse
+    ymin=1, ymax=1, % Setzt die Grenzen für die Y-Achse
+    grid=major, % Fügt ein Hauptgitter hinzu
+]
+\end{axis}
+\end{tikzpicture}
+\caption{}
+\end{figure}
+
+\pagebreak
+\subsubsection{$k$ - Koeffizent}
+Der Faktor $k$ ist ähnlich wie $a$ und bestimmt die Streckung und Stauchung des Graphen, allerdings wird der Graph an der $Y$-Achse gespiegelt, sobald dieser negativ wird. Dies wird begründet durch 
+Die Begründung hierfür ist, dass wenn eine Zahl für $k$ eingesetzt wird, bestimmt $k$ wie oft $x$ multipliziert wird. Hierdurch erreicht der Graph schneller die selben $Y$-Wert für $k>0$. Ist $k<0$, so kehrt sich der Graph um aufgrund der Negätivität von $k$. Werden nun postive Werte für $x$ eingesetzt, so entstehen hierraus immernoch negative Zahlen, denn $-$ mal $+$ ergibt $-$. Somit werden die gleichen $Y$-Werte wie im Positiven erricht, jedoch im Negativen.
+%ToDo Hier fehlt ein Graph mit einem Vergleich
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={},
+    xlabel={X-Achse},
+    ylabel={Y-Achse},
+    axis lines=middle, % Zentriert die Achsen
+    xmin=1, xmax=1, % Setzt die Grenzen für die X-Achse
+    ymin=1, ymax=1, % Setzt die Grenzen für die Y-Achse
+    grid=major, % Fügt ein Hauptgitter hinzu
+]
+\end{axis}
+\end{tikzpicture}
+\caption{}
+
+\end{figure}
+\pagebreak
+\subsubsection{$d$ - $X$-Achsenverschiebung}
+Die Variable $d$ gibt die $X$-Achsenverschiebung an. Sei $d>0$ verschiebt sich der Graph nach links, andernfalls für $d<0$ verschiebt sich der Graph nach rechts. 
+%ToDo Hier fehlt ein Graph mit einem Vergleich
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={},
+    xlabel={X-Achse},
+    ylabel={Y-Achse},
+    axis lines=middle, % Zentriert die Achsen
+    xmin=1, xmax=1, % Setzt die Grenzen für die X-Achse
+    ymin=1, ymax=1, % Setzt die Grenzen für die Y-Achse
+    grid=major, % Fügt ein Hauptgitter hinzu
+]
+\end{axis}
+\end{tikzpicture}
+\caption{}
+
+\end{figure}
+
+\pagebreak
+\subsubsection{$c$ - $Y$-Achsenverschiebung}
+Der Summand $c$ bestimmt die $Y$-Achsenverschiebung. Dies ist begründet durch die Tatsache, dass wenn ein Summand zu $x$ addiert wird, dieser immer um $c$ nach oben verschoben ist. 
+%ToDo Hier fehlt ein Graph mit einem Vergleich
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={},
+    xlabel={X-Achse},
+    ylabel={Y-Achse},
+    axis lines=middle, % Zentriert die Achsen
+    xmin=1, xmax=1, % Setzt die Grenzen für die X-Achse
+    ymin=1, ymax=1, % Setzt die Grenzen für die Y-Achse
+    grid=major, % Fügt ein Hauptgitter hinzu
+]
+\end{axis}
+\end{tikzpicture}
+\caption{}
+
+\end{figure}
 
 
 
