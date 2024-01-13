@@ -1,15 +1,15 @@
 \section{Potenzfunktionen}\label{sec:Potenzfunktionen}
 \subsection{Definition}\label{sec:Potenzfunktionen/Definition}
-Betrachtet man eine Funktion $f(x)=x^n$, wobei $n\in\setminus\{0\}$, so spricht man von einer Potenzfunktion. Der Begriff `{}Potenzfunktion`{} ist hierbei ein Schirmbegriff für alle Funktionen, die eine Potenz besitzen. Im Folgenden unterscheidet man zwischen
+Betrachtet man eine Funktion $f(x)=x^n$, wobei $n\in\mathbb{N}\setminus\{0\}$, so spricht man von einer Potenzfunktion. Der Begriff `{}Potenzfunktion`{} ist hierbei ein Schirmbegriff für alle Funktionen, die eine Potenz besitzen. Im Folgenden unterscheidet man zwischen
 \begin{itemize}
-	\item $n>0 \land n\equiv0(mod2)$ Bedeutet, dass $n$ größer als 0 ist und einen kongruenten Modulo hat für den Modulo aus 2 und den Wert $0$. Wird $n$ geteilt durch $2$, so muss der Modulo $0$ ergeben.
-	\item $n>0$ und $ n\equiv1(mod2)$
-	\item $n<0$ und $ n\equiv0(mod2)$
-	\item $n<0$ und $ n\equiv1(mod2)$
+	\item $n>0$ und $ n\equiv0$ $(\mathrm{mod}2)$ Bedeutet, dass $n$ größer als 0 ist und einen kongruenten Modulo hat für den Modulo aus 2 und den Wert $0$. Wird $n$ geteilt durch $2$, so muss der Modulo $0$ ergeben.
+	\item $n>0$ und $ n\equiv1$ $(\mathrm{mod}2)$
+	\item $n<0$ und $ n\equiv0 $ $(\mathrm{mod}2)$
+	\item $n<0$ und $ n\equiv1$ $(\mathrm{mod}2)$
 \end{itemize}
 \subsection{Potenzfunktionen mit $n>0$}\label{sec:Potenzfunktionen/Potenzfunktionen mit positivem Exponenten}
 Bei Potenzfunktionen unterscheidet man im wesentlichen zwischen $n>0$ und $n<0$ und zwischen geraden und ungeraden Exponenten
-\subsubsection{Potentfunktion mit $n>0 $ und $ n\equiv0(mod2)$}
+\subsubsection{Potentfunktion mit $n>0 $ und $ n\equiv0$ $(\mathrm{mod}2)$}
 Ist $n$ gerade und positiv, so hat eine Funktion $f(x)=x	^n$ folgende Eigenschaften.
 \begin{itemize}
 	\item Der Graph ist Achsensymmetrisch zu der $Y$-Achse
@@ -33,10 +33,10 @@ Ist $n$ gerade und positiv, so hat eine Funktion $f(x)=x	^n$ folgende Eigenschaf
 \addplot[mark=none, samples=100] {x^2};
 \end{axis}
 \end{tikzpicture}
-\caption{Quadratische Funktion mit $n>0$ und $ n\equiv0(mod2)$}
+\caption{Quadratische Funktion mit $n>0$ und $ n\equiv0$ $(\mathrm{mod}2)$}
 \end{figure}
 \geogebra{https://www.geogebra.org/m/cand2jpf}
-\subsubsection{Potenzfunktion mit $n>0$ und $ n\equiv1(mod2)$}
+\subsubsection{Potenzfunktion mit $n>0$ und $ n\equiv1$ $(\mathrm{mod}2)$}
 Ist $n>0$ und ungerade, so hat $f(x)=x^n$ die folgenden Eigenschaften.
 \begin{itemize}
 	\item $f(x)$ ist punktsymmetrisch zum Ursprung
@@ -59,10 +59,10 @@ Ist $n>0$ und ungerade, so hat $f(x)=x^n$ die folgenden Eigenschaften.
 \addplot+[mark=none, samples=100]{x^3};
 \end{axis}
 \end{tikzpicture}
-\caption{Potenzfunktion mit $n>0$ und $ n\equiv1(mod2)$}
+\caption{Potenzfunktion mit $n>0$ und $ n\equiv1$ $(\mathrm{mod}2)$}
 \end{figure}
 \subsection{Potenzfunktion mit $n<0$ - Hyperbel}\label{sec:Potenzfunktionen/Potenzfunktionen mit negativem Exponenten}
-Hat eine Funktion $f(x)=x^n$ einen negativen Exponenten, so bezeichnet man die Funktion als Hyperbel. Hyperbeln haben eine Definitionslücke, dass heißt, es gibt Zahlen, die man nicht für $x$ einsetzten darf. Hyperbeln verlaufen asymptotisch, dass heißt, es existieren Geraden, deren sich der Graph unendlich nah annähert, diese allerdings nicht tangiert. Besitzen sie einen geraden Exponenten verlaufen sie Achsensymmetrisch. Ist der Exponent ungerade, so verläuft der Graph Punktsymmetrisch. 
+Hat eine Funktion $f(x)=x^n$ einen negativen Exponenten, so bezeichnet man die Funktion als Hyperbel. Hyperbeln haben eine Definitionslücke, dass heißt, es gibt Zahlen, die man nicht für $x$ einsetzten darf. Hyperbeln verlaufen asymptotisch, dass heißt, es existieren Geraden, deren sich der Graph unendlich nah annähert, diese allerdings nicht tangiert. Besitzen sie einen geraden Exponenten verlaufen sie Achsensymmetrisch. Ist der Exponent ungerade, so verläuft der Graph punktsymmetrisch. 
 \subsubsection{Potenzfunktionen mit $n<0$ und $n\equiv0(mod2)$}
 Auch wie bei Potenzfunktionen mit einem positiven Exponenten gibt es Eigenschaften, die ein Graph einer Funktion mit einem negativen geraden Exponenten erfüllt.
 \begin{itemize}
@@ -85,7 +85,7 @@ Auch wie bei Potenzfunktionen mit einem positiven Exponenten gibt es Eigenschaft
 \addplot+[mark=none, samples=100]{x^(-2)};
 \end{axis}
 \end{tikzpicture}
-\caption{Potenzfunktion mit $n<0$ und $ n\equiv0(mod2)$}
+\caption{Potenzfunktion mit $n<0$ und $ n\equiv0$ $(\mathrm{mod}2)$}
 \end{figure}
 \subsubsection{Potenzfunktionen mit $n<0$ und $n\equiv1(mod2)$}
 Die Eigenschaften einer Potenzfunktion mit einem negativen ungeraden Exponenten sind die folgenden. 
@@ -109,10 +109,10 @@ Die Eigenschaften einer Potenzfunktion mit einem negativen ungeraden Exponenten 
 \addplot+[mark=none, samples=100]{x^(-3)};
 \end{axis}
 \end{tikzpicture}
-\caption{Potenzfunktion mit $n<0$ und $ n\equiv0(mod2)$}
+\caption{Potenzfunktion mit $n<0$ und $ n\equiv0$ $(\mathrm{mod}2)$}
 \end{figure}
 \subsection{Ausbildung des Graphen bei Potenzfunktion}\label{sec:Potenzfunktionen/Ausbildung des Graphen bei Potenzfunktionen}
-Ähnlich wie bei linearen Funktion stellt eine Potenzfunktion ein Verhältnis von einem $Y$-Wert zu einem $X$-Wert dar. Durch die Multiplikation bei einer Potenzfunktion, die durch den Exponenten bestimmt wird, kann beim Einsetzten in eine Varibale, die einen geraden Exponenten besitzt keine negative Zahl als Ergebnis entstehen. Bei einem ungeraden Exponenten kann wiederum eine negative Zahle als Ergebnis einer Multiplikation entstehen. Bei einer kubisch verlaufenden Potenzfunktion ist es wichtig, zu wissen, dass ein Exponenten angibt, wie oft eine Zahl mit sich selbst multipliziert wird. Kubisch verlaufende Funktionen sind Funktionen, die einen ungeraden Exponenten besitzen. Weil in der Variable $x$ jede Zahl von positiv bis negativ enthalten ist und das Multiplizieren von einer ungeraden Anzahl an Faktoren bei einer negativen Basis ein negatives Ergebnis ergibt, prägt sich der Graph in der kubischen Form aus. Da das Multipliziert von einer ungeraden Anzahl an positiven Faktoren ein positives Ergebnis ergibt, steigt der Graph im 2. Quadranten. 
+Ähnlich wie bei linearen Funktion stellt eine Potenzfunktion ein Verhältnis von einem $y$-Wert zu einem $y$-Wert dar. Durch die Multiplikation bei einer Potenzfunktion, die durch den Exponenten bestimmt wird, kann beim Einsetzten in eine Varibale, die einen geraden Exponenten besitzt keine negative Zahl als Ergebnis entstehen. Bei einem ungeraden Exponenten kann wiederum eine negative Zahle als Ergebnis einer Multiplikation entstehen. Bei einer kubisch verlaufenden Potenzfunktion ist es wichtig, zu wissen, dass ein Exponenten angibt, wie oft eine Zahl mit sich selbst multipliziert wird. Kubisch verlaufende Funktionen sind Funktionen, die einen ungeraden Exponenten besitzen. Weil in der Variable $x$ jede Zahl von positiv bis negativ enthalten ist und das Multiplizieren von einer ungeraden Anzahl an Faktoren bei einer negativen Basis ein negatives Ergebnis ergibt, prägt sich der Graph in der kubischen Form aus. Da das Multipliziert von einer ungeraden Anzahl an positiven Faktoren ein positives Ergebnis ergibt, steigt der Graph im 2. Quadranten. 
 
 
 
