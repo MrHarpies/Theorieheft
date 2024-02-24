@@ -19,7 +19,20 @@ Dem Logarithmus liegt die Mercator-Reihe zugrunde und ist lediglich eine Approxi
 Durch die Eigenschaften des Logarithmus kann man sagen, dass dieser das Verhältnis zwischen 
 \subsubsection{Anwendung}\label{sec:E-Funktion/Logarithmus/Anwendung}
 \subsection{Logarithmus naturalis} Der Logarithmus naturalis ist der Logarithmus zu der Basis $e$ und wird als verkürzte Schreibweise für $log_e(n)$ genutzt. 
-\subsection{Logaritmus Gesetzt}
+\subsection{Logarihtmus Gesetzt}
+Logarihtmusgesetze sind eine der Grundlegenden Vorrausetzung, um mit dem Logarithmus rechnen zu können. 
+\subsubsection{1. Logrithmusgesetz}
+\begin{align*}
+	ln(x\cdot y)=ln(x)+ln(y)
+\end{align*}
+\subsubsection{2. Logrithmusgesetz}
+\begin{align*}
+	ln\left(\frac{x}{y}\right)=ln(x)-ln(y)
+\end{align*}
+\subsubsection{2. Logrithmusgesetz}
+\begin{align*}
+	ln(x^t)=t\cdotln(x)
+\end{align*}
 \pagebreak
 \section{Ableitung des Logarithmus Naturalis}
 Genauso wie andere Funktion besitzt der $ln$ eine Ableitung. Die Besonderheit ist hierbei allerdings, dass die Ableitung des $ln(x)$ immer $\frac{1}{x}$ ist. Als Erklärung kann man sich folgendes Anschauen:
@@ -153,5 +166,82 @@ Der Summand $b$ sorgt für eine $Y$-Achsenverschiebung, da zu den $X$-Werten jew
 	\end{tikzpicture}
 	\caption{Auswirkung von $b$ auf den Graphen}
 \end{figure}
+\pagebreak
+\section{Inverse von $ln(x)$}
+Um die Inverse des $ln(x)$ zu bilden muss die Definitionsmenge und Wertemenge vertauschst werden und anschließend äquvalent umgeformt werden. 
+
+\begin{beispiel}
+	\begin{align*}
+		f(x)=5\cdot2^x\tag{$f(x)$ zu $y$ umschreiben}\\
+		y=5\cdot2^x\tag{Umformen nach $x$}\\
+		y=5\cdot 2^x\tag{Dividieren von $5$}\\
+		\frac{y}{5}=2^x\tag{Logarithmieren}\\
+		ln\left(\frac{y}{5}\right)=ln(2^x)\tag{3. Logarithmusgesetz}\\
+		ln\left(\frac{y}{5}\right)=x\cdot ln(2)\tag{Dividieren $ln(2)$}\\
+		\frac{ln\left(\frac{y}{5}\right)}{ln(2)}=x\\
+		\Rightarrow f^{-1}(x)=\frac{ln\left(\frac{x}{5}\right)}{ln(2)}
+		\end{align*}
+\end{beispiel}
+\section{Begrenztes Wachstum}
+Es gibt Sachverhalte, die erfodern, dass eine e-Funktion/Exponential Funktion nicht in ihrer ursprünglichen Form vorliegt. Dass bedeutet, dass nicht jeder Sachverhalt gleich mit einer Funktion, der Form $f(x)ae^{kx}$ oder $f(x)=a\cdot b^x$ modeliert werden kann. So eignet sich das  Beispiel eines Glasses Milch, der in einen Raum gestellt wird und somit sich Temperatur der auf die Raumtemperatur angleicht. Den Verlauf der Temperatur darzustellen in Abhängikeit der Zeit ergibt nur auf eine Art Sinn.
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{3cm}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                width= 6cm,
+                height=6cm,
+                xlabel={x},
+                ylabel={y},
+                xmin=0, xmax=40,
+                ymin=0, ymax=10,
+                title={Graph 1}
+            ]
+                \addplot coordinates {(0,0) (20,8) (40,10)};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[b]{3cm}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                width=6cm,
+                height=6cm,
+                xlabel={x},
+                ylabel={y},
+                xmin=0, xmax=40,
+                ymin=0, ymax=10,
+                title={Graph 2}
+            ]
+                \addplot coordinates {(0,0) (10,5) (20,7) (30,8) (40,9)};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[b]{3cm}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                width=6cm,
+                height=6cm,
+                xlabel={x},
+                ylabel={y},
+                xmin=0, xmax=40,
+                ymin=0, ymax=10,
+                title={Graph 3}
+            ]
+                \addplot coordinates {(0,0) (10,2) (20,4) (30,8) (40,10)};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{}
+    \end{subfigure}
+    \caption{Drei Graphen nebeneinander}
+    \label{fig:three_graphs}
+\end{figure}
+Die 25 Grad stellen das Minimum der Temperatur, welche der Kaffe erreichen kann, dar. Somit kann nur Abb 3 zutreffen auf eine mit einem begrenzten Wachstum. Um nun den Prozess des Modellierens, der Funktion, welche die Temperatur des Kaffes darstellt, fortzuführen, ist es wichtig sich die Informationen, welche gegeben sind, anzuschauen. So kann beispielsweise aus der Information, dass der Kaffe jeden Moment um 9\% wärmer wird, gezogen werden, dass $e^{-0.09}$ die alleinig um die Abnahme, sondern auch um die Begrenzung. Mit logischem Überlegen kann man nun den Graphen im Koordinatensystem verschieben. Dies erfolgt durch das Ändern der Parameter der Normalform. Da die Sättigungsgrenze bekannt ist, können wir mit dem Parameter $e$ den Graphen nach oben schieben, sodass der Graph bereits gegen $25$ konvergiert. Wissen wir nun den Startwert bzw. die Temperatur bei der wir den Kaffee raus gestellt haben, können wir konkret den Bereich der Wertemenge eingrenzen. Nehmen wir an, dass der Kaffe $4\deg$ kalt war, kann man sich nun den Bereich, der für die Rechnung relevant ist, berechnen. Dies wird mit der Hilfe von Subtraktion des Startwertes Minus die Sättigungsgrenze gemacht. Dies ist wichtig, weil wir einen Startwert benötigen für unsere Funktion. Normalerweise kann man einfach $a$ verändern, allerdings bedingt $-25$ diesen Wert. Unser Startwert ist also $25-4$. Daraus folgt, dass die Funktion wie folgt aussehen muss. \[f(x)=-21e^{-0.09x}+25\]
+
 
 

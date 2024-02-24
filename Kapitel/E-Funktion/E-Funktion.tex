@@ -17,6 +17,7 @@ Die besonderheit bei $e$-Funktionen ist, dass die Differenzierte und Integrierte
 Ähnlich wie bei dem normalen Ableiten bei einer ganzrationalen Funktion lässt sich hier die Faktorregel anwenden.
 %ToDo Hier fehlen Informationen bezüglich des Ableitens und Differenzieren
 \subsubsection{Kettenregel}
+Liegt eine verkette Funktion vor, so kann diese mithilfe der Kettenregel abgleitet werden. Bei einer verketteten Funktion gibt es eine äußere Funktion und eine innere Funktion. 
 Die Kettenregel ist ein wichtiges Hilfsmittel beim Ableiten von komplexeren Funktion, die sich in eine innere und äußere Funktion einteilen lassen. Die Kettenregel lautet wie folgt.
 \begin{align*}
 	f(x)&=u(v(x))\\
@@ -28,6 +29,33 @@ Um mit der Kettenregel zu integrieren wendet man folgende Normalform an.
 	f(x)=u(v(x))\\
 	F(x)=\frac{U(v(x))}{v'(x)}
 \end{align*}
+\begin{beispiel}
+	\begin{align*}
+		f_1(x)=e^{\frac{1}{2}x}\tag{Aufteilen in innere- und äußere Funktion}\\
+		v(x)=\frac{1}{2}x \tag{Die innere Funktion}\\
+		u(x)=e^x\tag{Die äußere Funktion}\\
+	\end{align*}
+	Anschließend werden die Funktionen einzeln abgleitet und wieder mit der Form zusammen gebracht.
+\end{beispiel}
+\subsubsection{Differentialgleichungen}
+Differentialgleichungen werden vorwiegend genutzt, um eine gesuchte Funktion mit einer Gleichung zu erhalten. Konkret bedeutet dies, dass eine Differentialgleichung 1. Ordnung
+die Ausgangsfunktion und die Ableitung enthält. Allerdings bezieht sich dies nur auf e-Funktionen. So kann man beispielsweise eine e-Funktion wie folgt ableiten. 
+
+\begin{beispiel}
+	\begin{align*}
+		f'(x)=k\cdot f(x)\\
+	\end{align*}
+In der Anwendung von Differnetialgleichungen gibt es außerdem noch die Möglichkeit Bedingungen aufzustellen ($f(0)=1$). Mit solchen Bedingungen kann man wie folgt umgehen.
+
+\begin{beispiel}
+\begin{align*}
+	f(0)=1\tag{Bedingung}\\
+	f(0)=e^{k\cdot 1}\tag{Nach $k$ auflösen}\\
+	ln(f(0))=k\cdot 1\tag{Dividieren durch 1}\\
+	ln(f(0))=k\\
+	\Rightarrow f'(x)=ln(f(0))\cdot f(x)
+\end{align*}
+\end{beispiel}
 
 \subsection{$e$-Funktion aufstellen}
 Um eine $e$-Funktion aufzustellen aus einem gegeben Sachverhalt, ist mindestens ein Wertepaar in der $(F;G)$ notwendig. Hierfür nimmt man zu Beginn die Normalform der $e$-Funktion ($ae^{kx}$)
