@@ -28,6 +28,7 @@ Meine Fokus während des Schreibens dieses Dokuments liegt primär auf der Verst
 | [Pixelmator](https://www.pixelmator.com/pro/) | Grafische Visualiserungen                             |  
 | [Latex](https://www.latex-project.org)        | Kompilieren des Dokuments                             |
 | [Online Latex Equation Edditor](https://latex.codecogs.com/eqneditor/editor.php) | Für die gelegentliche Nutzung, um zu Testen |
+| [Youtube](www.youtube.com) | Teilweise Bereitstellung von Videoinhalten |  
 
 
 
