@@ -3,15 +3,17 @@ Die Analytische Geometrie ist eine Erweiterung der Analysis, um den dreidimensio
 \subsection{Normen und Regeln}
 In der Analytischen Geometrie gibt es Eigenschaften, die wichtig im Kopf zu behalten. 
 \subsubsection{Zeichnen eines karthesischen Koordinatensystems}
-Das Zeichnen eines karthesischen Koordinatensystems beginnt mit im Wesentlichen wie das Zeichnen eines zweidimensonalen Koordinatensystems. 
+Das Zeichnen eines karthesischen Koordinatensystems beginnt mit im Wesentlichen wie das Zeichnen eines zweidimensonalen Koordinatensystems.
 \begin{itemize}
 \item[1] Zuerst werden, wie bei einem zweidimensionalen Koordinatensystem, die beiden Achsen eingezeichnet. Hierbei ändert sich die Beschriftung der Achsen, da nun unsere ehemalige $x$-Achse die $y$-Achse ist und die ehemalige $y$-Achse nun die $z$-Achse.
 \item[2] Anschließend nutzt man die Kästchen, die auf dem Blatt bereits vorgezeichnet sind und zeichnet in einem $45^{\circ}$. Dies bedeutet die $x$-Achse kommt aus dem Blatt heraus. 
 \item[3] Nun kann an die nach oben zeigende Achse mit $z$, die horizontale Achse mit $y$ und die aus dem Blatt kommende mit $x$ beschriftet werden. 
 \item[4] Die Skalierung der Achsen ist bei der $z$-Achse und der $y$-Achse gleich, wie bei einem zweidimensionalen Koordinatensystem. Die $x$-Achse hingegen nutzt die Hälfte einer relative Länge der Einheit auf der $z$ oder $y$-Achse. Dies bedeutet, dass ist eine Einheit auf der $y$-Achse in ein $cm$ skaliert ist die $1$ auf dieser bei einem Zentimeter. Auf der $x$-Achse ist sie bei $0.5cm$
 \end{itemize}
+Da das Zeichnen eines dreidimensionalen Koordiantensystems zeitintensiv ist, stellt die Website Kölzer eine Reihe an Vorlagen bereit, welche einfach in Dokumente importiert werden können. Ebenfalls stellt sie einen interaktiven Koordinatensystemgenerator zu verfügung, um Koordinatensystem in eigener Skalierung zu erstellen.\\
+\link{https://kölzer.eu/koordinatensystem/}{Kölzer 3D-Plot}
+
 Den Ablauf des Zeichnens wird ebenfalls durch das folgende Fliesdiagramm dargestellt. 
-\pagebreak
 \includegraphics[width=9cm]{Algorithmen/karthesisches-Koordinatensystem-zeichen/karthesisches-Koordinatensystem-zeichen.drawio.pdf}
 \subsection{Der dreidimensionale Raum}
 Der dreidimensonale Raum wird beschrieben durch die 3 Achsen, die somit einem Punkt ermöglichen jede erdenkliche Position im Raum anzugeben. 
@@ -20,8 +22,8 @@ Der dreidimensonale Raum wird beschrieben durch die 3 Achsen, die somit einem Pu
 \subsection{Punkte einzeichnen}
 Um einen Punkt in ein dreidimensonales Koordinatesystem einzuzeichen geht man wie folgt vor.
 \begin{itemize}
-	\item[1] Zuerst geht man die gegeben $x_1$-Koordinate entlang
-	\item[2] Nun geht man die jeweiligen Schritte auf der $x_2$-Achse
+	\item[1] Den im Punkt geben Wert auf der $x_1$-Achse gehen
+	\item[2] Von dem vorherigen Schritt aus geht man nun in relativen Einheiten die Schritte, die als $x_2$-Achse oder $y$-Achse angeben sind. 
 	\item[3] Abschließend geht man nun relative Einheiten auf der $x_3$-Achse  
 \end{itemize} 
 
