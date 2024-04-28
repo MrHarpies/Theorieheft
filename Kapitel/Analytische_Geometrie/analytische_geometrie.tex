@@ -37,7 +37,6 @@ Um einen Punkt im Koordinatensystem zu bestimmen wird mindestens eine Koordinate
 \includegraphics[width=10cm]{Media/punktablesen3dKoordinatensystem.jpg}
 \subsection{Spiegelung von Punkten}
 Das spiegeln von Punkten in einem karthesischen Koordinatensystem erfordert immer die Voraussetzung, dass angegeben ist zu welcher Koordinatenebene ein Punkt gespiegelt werden soll. Um einen Punkt an einer Koordinatenebene zu spiegeln kann einfach das Vorzeichen der nicht betroffenen Koordinatenachse umkehren und erhält somit die Spiegelung. 
-
 Der Punkt $A(3,4,5)$ soll an der $x_1/x_2$-Ebene gespiegelt werden. Da ein Punkt 
 aus dem folgenden Triplet aus Koordinaten besteht, folgt also, dass wir das
 Vorzeichen der Koordinate $x_3$ ändern müssen. 
@@ -51,5 +50,114 @@ man wie folgt umgehen.
 	A(3,4,5) \rightarrow B(3,4,-5)
 \end{align*}
 \end{beispiel}
+\subsection{Vektor}
+Ein Vektor ist eine Richtungsangabe im dreidimensonalen Raum. Sie werden in relativen Einheiten von ihrem Startpunkt aus angeben. 
+\begin{figure}[h]
+\begin{tikzpicture}
+ \centering
+\begin{axis}
+ 
+\addplot3 coordinates 
+{
+    
+    (0,0.5,0)
+    (1,0,1)
+    
+};
+\addplot3[no marks, -stealth, thick, black] coordinates {(0,0.5,0) (1,0,1)};
+ 
+\end{axis}
+ 
+\end{tikzpicture}
+
+\end{figure}
+\subsubsection{Notation}
+Die Notation von Vektoren unterscheidet sich von der Angabe von Punkten deutlich, da sie die Koordianten übereinander darstellt. Wird ein Vektor zwischen zwei Punkten angeben, so besitzt dieser den Namen der beiden Punkte mit einem Pfeil über den Namen ($\vec{AB}$). 
+\begin{align*}
+\begin{pmatrix} x \\ y\\ z \end{pmatrix}
+\end{align*}
+\subsubsection{Nullvektor}
+Der Nullvektor wird als solcher bezeichnet, da er der Vektor im Ursprung ist. Dieser besitzt die Koordinaten $\vec{0}=\begin{pmatrix} 0 \\ 0\\ 0 \end{pmatrix}$ Auch Punkte können als Vektor dargestellt werden, indem man man hierbei von dem Nullvektor zu dem Punkt verweißt. Ein solcher Punkt besitzt anschließend immer den Namen $\vec{OA}$, wobei $A$ der Punkt ist, auf den der Vektor zeigt.
+\subsubsection{Gegenvektor}
+Der Gegenvektor eines Vektor ist der Vektor, der in die entgegengesetzte Richtung zeigt. Besitzt ein Vektor also die Koordinaten 
+$\vec{OA}=\begin{pmatrix}
+	2\\3\\4
+\end{pmatrix}$ $\rightarrow$ $\vec{OA}=\begin{pmatrix}
+	-2\\-3\\-4
+\end{pmatrix}$
+\subsection{Punkt zu Vektor}
+Bei einem Punkt, dessen Koordinaten angegeben sind, ist es möglich, dass dieser als Vektor angeben wird. Da Vektoren in relativen Einheiten angegeben werden, muss dies hierbei auch beachtet werden. Bei einem Punkt ist dies einfach, da man vom Ursprung ausgeht. Somit folgt, dass der Vektor exakt die selben Koordinaten wie der Punkt besitzt. 
+
+\begin{beispiel}
+	\begin{align*}
+		A(2,3,4) \rightarrow \vec{OA}\begin{pmatrix}
+			2\\3\\4
+		\end{pmatrix}
+	\end{align*}
+\end{beispiel}
+\pagebreak
+\subsection{Länge eines Vektors}
+Da Vektoren relativ zu einem anderen Punkt angeben sind besitzten diese auch eine Länge. Diese Länge kann berechnet werden durch den dreidimensonalen Satz des Phytagoras. Die Grundlage hierfür ist der Satz des Phytagoras, welcher $a^2+b^2=c^2$ lautet. Das Ziel bei dem dreidimensonalen Phytagoras das selbe Prinzip anzuwenden, jedoch mit der Besonderheit, dass er doppelt angewendet werden muss. Geht man davon aus, dass der Vektor $\vec{AB}$ berechnet werden soll und $A(a_1|a_2|a_2)$, $B(b_1|b_2|b_3)$ lauten, wobei ein Punkt folgendes Koordinatentripplet $P(x|y|z)$ besitzt,  sieht der dreidimensonale Satz des Phytagoras wie folgt aus. 
+\begin{align*}
+	|\vec{AB}|=\sqrt{(b_1-a_1)^2+(b_2-a_2)^2+(b_3-a_3)}
+\end{align*}
+Betrachtet man, was beim Anwenden passiert, fällt auf, dass durch das Subtrahieren von $b_1 - a_1$ die Differenz entsteht, und dies führt zu $a^2$ in der Normalform des Satzes des Pythagoras. Das Gleiche passiert beim zweiten Term. Wendet man nun den Satz des Pythagoras an, erhält man $\lvert \vec{AC} \rvert$ und hat somit die Grundlage für die zweite Anwendung des Satzes des Pythagoras ($a^2$). Addiert man nun $(\lvert \vec{AC} \rvert)^2$ mit $(\lvert \vec{CB} \rvert)^2$, so erhält man $(\lvert \vec{AB} \rvert)^2$. Zieht man die Wurzel, ergibt sich die Länge des Vektors $\vec{AB}$.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	clip=false,
+	xmin=0.1, xmax=1.4,
+    ymin=0.1, ymax=1.4,
+    zmin=0, zmax=6,
+    xlabel={$y$-Achse},
+    ylabel={$x$-Achse},
+    zlabel={$z$-Achse},]
+ 
+\addplot3+[black, thick] coordinates {
+    (0.5,0.5,0)
+    (1,1,5)
+    (1,1,0)
+    (0.5,0.5,0)
+};  
+\addplot3+[no markers, black] coordinates {(0.5,0.5,0) (1,0.5,0) (1,1,0) (0.5,1,0) (0.5,0.5,0)}; % Obere Fläche
+\addplot3+[no markers, black] coordinates {(0.5,0.5,5) (1,0.5,5) (1,1,5) (0.5,1,5) (0.5,0.5,5)}; % Untere Fläche
+\addplot3+[no markers, black] coordinates {(0.5,0.5,0) (0.5,0.5,5)}; % Vertikale Linien
+\addplot3+[no markers, black] coordinates {(1,0.5,0) (1,0.5,5)};
+\addplot3+[no markers, black] coordinates {(1,1,0) (1,1,5)};
+\addplot3+[no markers, black] coordinates {(0.5,1,0) (0.5,1,5)};
+
+\addplot3+[no markers, fill=red, opacity=0.2] coordinates {(0.5,0.5,0) (1,0.5,0) (1,1,0) (0.5,1,0) (0.5,0.5,0)}; % Obere Fläche
+\addplot3+[no markers,fill=red, opacity=0.2] coordinates {(0.5,0.5,5) (1,0.5,5) (1,1,5) (0.5,1,5) (0.5,0.5,5)}; % Obere Fläche
+
+\node at (axis cs:0.5,0.5,0) [anchor=north] {A};
+\node at (axis cs:1,1,5) [anchor=south] {B};
+\node at (axis cs:1,1,0) [anchor=north] {C};
+
+\draw[<->] (axis cs:1,1.1,0) -- (axis cs:1,1.1,5) node[midway, sloped, below] {$|b_3-a_3|$};
+\draw[<->] (axis cs:0.5,0.4,0) -- (axis cs:1,0.4,0) node[midway, sloped, below] {$|b_1-a_1|$};
+\draw[<->] (axis cs:1.1,0.4,0) -- (axis cs:1.1,1,0) node[midway, sloped, below] {$|b_1-a_1|$};
+
+\end{axis}
+ 
+\end{tikzpicture}
+\caption{Veranschaulichung des dreidimensonalen Satz des Phytagoras}
+\end{figure}
+\subsection{Skalarprodukt}
+Das Skalarprodukt ist ein Produkt, welches durch eine Multiplikation eines mit einer Zahl mit dem Vektor entsteht. Das Multiplizieren erfolgt bei jeder Koordinate eines Vektors.
+\subsection{Vektoren und Pfeile}
+Vektoren können zur Beschreibung einer Verschiebung verwendet werden. Die Koordinaten de Vektors geben an, wie man bei der Verschiebung im Koordinatensystem von einem Punkt zu seinem Bildpunkt kommt. Verschiebungspfeile $\vec{TV}$, $\vec{RS}$ und $\vec{PQ}$ im Koordiantensystem rechts sind gleich gerichtet und gleichlang. Alle Pfeile veranschaulichen den gleichen Vektor. Umgekehrt bestimmt jeder Pfeil einen Vektor. So veranschaulicht etwa der Pfeil $\vec{PQ}$ von $P(6|4|1)$ nach $Q(10|3|4)$ den Vektor $\vec{v}$ mit $\vec{v}=\begin{pmatrix}
+	10-6\\3-4\\4-1
+\end{pmatrix}$
+Man schreibt deshalb auch $\vec{PQ}=\begin{pmatrix}
+	4\\-1\\3
+\end{pmatrix}$. Dabei muss man beachten, dass der Vektor $\begin{pmatrix}
+	4\\-1\\3
+\end{pmatrix}$ zur Beschreibung der Verschiebung nicht an die Punkte $P$ und $Q$ gebunden ist. Er kann auch durch jeden anderen seiner Pfeile z.B. durch die Pfeile von $\vec{RS}$ oder von $\vec{TV}$, dargestellt werden. 
+\begin{center}
+	\includegraphics[width=6cm]{Media/VektorUndPunkt}
+\end{center}
+
 
 
